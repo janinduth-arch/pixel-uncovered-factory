@@ -1,0 +1,43 @@
+name: Build Pixel Uncovered video
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "content/episode.json"
+      - "build.py"
+      - "requirements.txt"
+      - ".github/workflows/build-video.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install video and speech tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg espeak-ng
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build video
+        run: python build.py
+
+      - name: Upload finished video and assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: pixel-uncovered-video
+          path: output/
+          retention-days: 7

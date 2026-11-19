@@ -1,0 +1,47 @@
+{
+  "channel_name": "Pixel Uncovered",
+  "topic": "Why do video game cities feel alive?",
+  "title": "Why Video Game Cities Feel So Alive",
+  "hook": "A great game city feels alive even when you are not looking.",
+  "voice": "en-us",
+  "scenes": [
+    {
+      "heading": "MORE THAN GRAPHICS",
+      "caption": "Realism is not only about sharper textures.",
+      "narration": "A great video game city feels alive for reasons that go far beyond graphics."
+    },
+    {
+      "heading": "NPC ROUTINES",
+      "caption": "Characters can follow routines and react to the world.",
+      "narration": "Non player characters can follow routines, move through the world, and react to events. Those small behaviours make streets feel populated."
+    },
+    {
+      "heading": "AMBIENT SOUND",
+      "caption": "Traffic, crowds and distant sounds build atmosphere.",
+      "narration": "Ambient audio adds another layer. Traffic, conversations, footsteps and distant activity help make a place feel like a functioning city."
+    },
+    {
+      "heading": "WORLD DETAILS",
+      "caption": "Signs, shops and changing environments tell a story.",
+      "narration": "Environmental details also matter. Signs, shops, weather and changing locations give each area its own identity."
+    },
+    {
+      "heading": "THE REAL SECRET",
+      "caption": "The world should feel like it exists without you.",
+      "narration": "The real trick is making the world feel as though it continues to exist when the player looks away. Which game does this best?"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Add your fact-checking source here",
+      "url": "https://"
+    }
+  ],
+  "description": "An original gaming explainer from Pixel Uncovered. This video discusses general game-design techniques using original narration and graphics.",
+  "hashtags": [
+    "#Gaming",
+    "#GameDesign",
+    "#VideoGames",
+    "#Shorts"
+  ]
+}
